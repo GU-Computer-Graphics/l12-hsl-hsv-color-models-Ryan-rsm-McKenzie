@@ -85,7 +85,7 @@
     colors.forEach((color, i) => {
       const geom = starGeometry(size);
 
-      const step = i * Math.PI / 3;
+      const step = i * 2 * Math.PI / colors.length;
       const radius = size * 1.5;
       geom.translate(Math.cos(step) * radius, Math.sin(step) * radius, 0);
 
